@@ -1,0 +1,101 @@
+@charset "utf-8";
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, code, form, 
+fieldset, legend, input, textarea, button,  p, blockquote, th, td {margin:0; padding:0;}
+html, body {width:100%; height:100%; margin:0; font-size:95%;padding:0;color:#333;font-size:12px}
+li {list-style:none;}
+img, fieldset {border:none;}
+img {vertical-align:top;}
+img, input{vertical-align:middle;}
+table {border-spacing:0;}
+input[type="password"],input[type="text"],select, textarea{vertical-align:middle;border:1px solid #e1e1e1;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-radius:3px;font-size:12px;}
+form {display:block; margin-top:0em;margin:0 auto;}
+button {border:0 none;background-color:transparent;cursor:pointer}
+button img {padding:0 0 0 1em ! important;margin-right:-5px}
+
+h1,h2,h3,h4,h5,h6,th, dt,required, strong{font-weight:normal;color:#333}
+h5{font-size:1.1em}
+legend, caption {visibility:hidden;width:0;height:0;line-height:0;font-size:0;}
+.hidden{display:none;visibility:hidden;}
+.center {text-align:center}
+.left{float:left}
+.right{float:right}
+a, a:link, a:visited {text-decoration:none; color:#333;}
+a:hover {color:#333}
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";}.clearfix:after{clear:both;}
+table {border-spacing:0;border-collapse:collapse;} 
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;} 
+input {vertical-align:middle;color:#333;height:25px;padding:0 3px;}
+input[type="checkbox"] {margin-top:-1px;}
+.clearfix {clear:both}
+.input_st {line-height:26px;height:28px;padding:0 5px}
+
+/* header_wrap */
+#header_wrap {background-color:#fff;height:55px;}
+#header_wrap .header  {width:1100px;margin:0 auto;}
+#header_wrap .header .gohome{float:left;vertical-align:middle;width:120px;height:41px;/*background-image: url(/static/css/img/lottohaja.png);*/background-repeat: no-repeat;margin-left:240px}
+#header_wrap .header .input_search{border:3px solid #666;width:300px;font-weight:bold;}
+#header_wrap .header .btn_search{border:1px solid #666;width:80px;height:30px;font-weight:bold;font-size:18px;}
+
+/* header_subscribe */
+#header_subscribe {background-color:#CCC;height:50px;line-height:50px;}
+#header_subscribe .header {width:1100px;margin:0 auto;}
+#header_subscribe .header .subscribe {width:400px;margin:0 auto;}
+#header_subscribe .header .input_subscribe {border:1px solid #666;width:300px;}
+#header_subscribe .header .btn_subscribe{border:1px solid #666;width:80px;height:25px;}
+
+/* header_category */
+#header_category {background-color:#fff;height:150px;line-height:30px;}
+#header_category .header {width:1100px;margin:0 auto;}
+#header_category .header .nav {width:100%;padding-top:1.2em;}
+#header_category .header .nav li {display:inline-block;font-size:1.3em;text-align:center;border:1px solid;}
+#header_category .header .nav li.select {background:#f5d6af;}
+
+#search_text {background-color:#fff;width:1100px;margin:0 auto;}
+
+/* contents */
+#contents {background-color:#fff;width:1100px;margin:0 auto;}
+#contents .lists {width:100%;padding-top:1.2em;}
+#contents .lists li {display:inline-block;text-align:center;border:1px solid;width:342px;height:270px;margin:5px 3px;padding:5px;}
+#contents .lists li img {width:300px;height:100px;margin:5px;}
+#contents .lists li .coupon_area {position:absolute;width:340px;margin-top:25px;height:60px;padding:5px 0;}
+#contents .lists li .coupon_area div {margin-top:3px;}
+#contents .lists li .get_coupon {border:1px solid #666;width:100px;height:30px;font-weight:bold;font-size:18px;}
+#contents .lists li .send_method {border:1px solid #666;width:110px;height:30px;font-weight:bold;font-size:18px;}
+#contents .lists li .input_send {border:1px solid #666;width:150px;}
+#contents .lists li .send_coupon {border:1px solid #666;width:80px;height:28px;font-weight:bold;font-size:12px;}
+#contents .lists li .cancel_send_coupon {border:1px solid #666;width:60px;height:28px;font-weight:bold;font-size:12px;}
+
+#main_contents {background-color:#fff;width:1100px;margin:0 auto;}
+#main_contents .lists {}
+#main_contents .lists li {display:inline-block;text-align:center;width:33%;vertical-align:top;}
+#main_contents .lists li ul {width:345px;padding-top:1.2em;}
+#main_contents .lists li ul li {display:inline-block;text-align:center;border:1px solid;width:342px;height:270px;margin:5px 3px;padding:5px;}
+#main_contents .lists li ul .title {display:inline-block;text-align:center;border:1px solid;width:342px;height:25px;margin:5px 3px;padding:5px;}
+#main_contents .lists li ul img {width:300px;height:100px;margin:5px;}
+#main_contents .lists li ul .coupon_area {position:absolute;width:340px;margin-top:25px;height:60px;padding:5px 0;}
+#main_contents .lists li ul .coupon_area div {margin-top:3px;}
+#main_contents .lists li ul .get_coupon {border:1px solid #666;width:100px;height:30px;font-weight:bold;font-size:18px;}
+#main_contents .lists li ul .send_method {border:1px solid #666;width:110px;height:30px;font-weight:bold;font-size:18px;}
+#main_contents .lists li ul .input_send {border:1px solid #666;width:150px;}
+#main_contents .lists li ul .send_coupon {border:1px solid #666;width:80px;height:28px;font-weight:bold;font-size:12px;}
+#main_contents .lists li ul .cancel_send_coupon {border:1px solid #666;width:60px;height:28px;font-weight:bold;font-size:12px;}
+
+#coupon_contents {background-color:#fff;width:1100px;margin:0 auto;padding-top:1.2em;}
+
+/*footerWrap*/
+#footerWrap {clear:both;position:relative;width:100%;margin:0 auto;margin-top:30px;text-align:center;padding:30px 0 10px 0;}
+
+.footer {max-width:1000px; margin:0 auto}
+.footer .logo {float:left;}
+.footer .copy {float:left;margin-left:3em;text-align:left}
+.footer .copy span{padding:0 0.5em}
+.footer .copy li {font-size:12px;padding:2px;}
+.footer .menu  {float:right;}
+.footer .menu li {display:inline-block;margin:0 10px;font-size:12px;}
+.footer .menu li a:before {content:"/";color:#aaa;padding: 0 15px 0 0; font-family:'NanumGothicBold','NanumGothic', arial, sans-serif}
+.footer .menu li:first-child a:before {content:"";display:none;}
+.iconFooter em{/*background:url(/static/css/img/lottohaja.png);background-repeat:no-repeat;*/text-indent:-9999em;width:45px;height:45px;display:block; margin:0 auto}
+.iconFooter .logo{background-position:0 0; width:150px;height:50px}
+/*body { margin:0px;padding:0px;text-align:; }
+.box { border:1px solid #C00;width:400px;height:25px; }
+.bold { font-weight:bold; }*/

@@ -1,0 +1,44 @@
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Server-sent events demo</title>
+</head>
+<body>
+  <button>Close the connection</button>
+
+  <ul>
+  </ul>
+
+<script>
+var evtSource;
+var button = document.querySelector('button');
+var eventList = document.querySelector('ul');
+function reconnect() {
+    if(evtSource) evtSource.close();
+    //evtSource = new EventSource("http://devapi.coinnoon.com/socket/sse.php");
+    evtSource = new EventSource("//dev.coinnoon.com/sse/", { withCredentials: true });
+    evtSource.onopen = function() {
+        console.log("Connection to server opened.");
+    };
+    evtSource.onmessage = function(e) {
+        if(e.data == 'retry') {
+            reconnect();
+            return ;
+        }
+        var newElement = document.createElement("li");
+        data = JSON.parse(e.data);
+        newElement.textContent = data.a;
+        eventList.appendChild(newElement);
+    }
+        evtSource.onerror = function() {
+        console.log("EventSource failed.");
+    };
+    button.onclick = function() {
+        console.log('Connection closed');
+        evtSource.close();
+    }
+}
+reconnect();
+</script>
+</body>
+</html>

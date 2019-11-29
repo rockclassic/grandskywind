@@ -1,0 +1,28 @@
+// ************
+// * FUNCTION *
+// ************
+@function z($target) {
+  @if map-has-key($z-index, $target) {
+    @return map-get($z-index, $target);
+  }
+  @return null;
+}
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    @if $key {
+      $map: map-get($map, $key);
+    }
+  }
+  @return $map;
+}
+@function map-has-nested-keys($map, $keys...) {
+  @each $key in $keys {
+    @if $key {
+      @if not map-has-key($map, $key) {
+        @return false;
+      }
+      $map: map-get($map, $key);
+    }
+  }
+  @return true;
+}

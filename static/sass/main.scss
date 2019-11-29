@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+@import 'compass';
+@import 'config';
+@import 'function';
+@import 'mixin';
+@import 'extend';
+
+.banner-content {
+	$main-banner-url:'main/bg_main_content.jpg';
+	$width:(image-width($main-banner-url)/2);
+	$height:(image-height($main-banner-url)/2);
+	position:relative;
+	width:100%;
+	min-height:round($height);
+	@include background((
+		file:$main-banner-url
+	));
+	background-size:100%;
+	// h2 {
+	// 	$main-h2-url:'main/h2_title.png';
+	// 	$width:(image-width($main-h2-url)/2);
+	// 	$height:(image-height($main-h2-url)/2);
+	// 	margin:0 auto;
+	// 	padding:16px 0;
+	// 	width:round($width);
+	// 	height:round($height);
+	// 	@extend %ir;
+	// 	@include background((
+	// 		file:$main-h2-url,
+	// 		coordinate: 50% 50%
+	// 	));
+	// 	background-size:round($width);
+	// }
+	.banner-list {
+		overflow:hidden;
+		padding-top:20px;
+		padding-bottom:24px;
+		.banner-visual{
+			position: relative;
+			width:88%;
+			height: 100%;
+			z-index: 1;
+			display: -webkit-box;
+			display: -moz-box;
+			transform: translate3d(0,0,0);
+			-webkit-transform: translate3d(0,0,0);
+			-moz-transform: translate3d(0,0,0);
+			-o-transform: translate(0,0);
+			-ms-transform: translate3d(0,0,0);
+			-webkit-transition-property: -webkit-transform;
+			-moz-transition-property: -moz-transform;
+			-o-transition-property: -o-transform;
+			-ms-transition-property: -ms-transform;
+			transition-property: transform;
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			box-sizing: content-box;
+		}
+		.banner-item {
+			padding-bottom:15px;
+			width:100%;
+			min-height:277px;
+			@include border-radius(5px);
+			text-align: center;
+			background: #fff;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+			@extend %list-style-01;
+		}
+		.navi-list {
+			@include absolute(bottom 0 left 0);
+			width:100%;
+			height:20px;
+			text-align:center;
+			-webkit-transition: .3s;
+			-moz-transition: .3s;
+			-o-transition: .3s;
+			transition: .3s;
+			-webkit-transform: translate3d(0,0,0);
+			-ms-transform: translate3d(0,0,0);
+			-o-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+			z-index:10;
+			@extend %navi-style-01;
+		}
+	}
+}
+
+.main-content {
+	.button-content {
+		padding:0;
+		background-color:none;
+		border-top:0 none;
+		h2 {
+			@extend %ir;
+		}
+		.button-list {
+			overflow:hidden;
+			box-sizing:border-box;
+			border-top:1px solid map-get($line-color, 1);
+			border-bottom:1px solid map-get($line-color, 4);
+			a {
+				display:block;
+				float:left;
+				width:50%;
+				color:map-get($font-style-color, 3);
+				background-color:map-get($btn-color, 1);
+				text-decoration:none;
+				box-sizing:border-box;
+				span {
+					display:block;
+				}
+				.visual {
+					height:81px;
+					@each $v in $icon-menu {
+						&.#{$v} {
+							$width:(image-width('icon/' + $v + '.png')/2);
+							background:image-url('icon/' + $v + '.png') 50% 50% no-repeat;
+							background-size:round($width);
+						}
+					}
+				}
+				.tit {
+					margin-bottom:7px;
+					font-size:map-get($font-style-size, 4);
+					font-weight:map-get($font-style-weight, Medium);
+					text-align:center;
+				}
+				.info {
+					margin-bottom:13px;
+					font-size:map-get($font-style-size, 1);
+					font-weight:map-get($font-style-weight, Light);
+					text-align:center;
+					line-height:15px;
+				}
+				&.investment {
+					border-right:1px solid map-get($line-color, 1);
+					border-bottom:1px solid map-get($line-color, 4);
+				}
+				&.products {
+					border-left:1px solid map-get($line-color, 4);
+					border-bottom:1px solid map-get($line-color, 4);
+				}
+				&.market {
+					border-top:1px solid map-get($line-color, 1);
+					border-right:1px solid map-get($line-color, 1);
+				}
+				&.status {
+					border-top:1px solid map-get($line-color, 1);
+					border-left:1px solid map-get($line-color, 4);
+				}
+			}
+		}
+	}
+	
+}

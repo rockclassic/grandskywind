@@ -1,0 +1,117 @@
+// *********
+// * MIXIN *
+// *********
+
+@mixin hide {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+@mixin size($size) {
+  $width: nth($size, 1);
+  $height: $width;
+  @if length($size) > 1 {
+    $height: nth($size, 2);
+  }
+  width: $width;
+  height: $height;
+}
+@mixin position($position, $args) {
+  position: $position;
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+
+    @if $i {
+      #{$o}: nth($args, $i+1);
+    }
+  }
+}
+@mixin margin($args) {
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+
+    @if $i {
+      margin-#{$o}: nth($args, $i + 1);
+    }
+  }
+}
+@mixin padding($args) {
+  @each $o in top right bottom left {
+    $i: index($args, $o);
+
+    @if $i {
+      padding-#{$o}: nth($args, $i + 1);
+    }
+  }
+}
+@mixin absolute($args) {
+  @include position(absolute, $args);
+}
+@mixin a--link($args, $size, $offset, $reset: false) {
+  @if $reset {
+    @include absolute($args);
+    @include size($size);
+    margin-left: $offset;
+  }
+  @else {
+    display: block;
+    @include hide;
+    @include absolute($args);
+    @include size($size);
+    margin-left: $offset;
+  }
+}
+@mixin a--button($args, $size, $offset) {
+  @include absolute($args);
+  @include size($size);
+  margin-left: $offset;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+@mixin center--document($width) {
+  width: $width;
+  margin: 0 auto;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin background($options: ()) {
+  $options: map-merge((
+    coordinate: 50% 0,
+    repeat: false,
+    color: false
+  ), $options);
+
+  @if map-get($options, file) {
+    background-image: image-url(map-get($options, file));
+    background-position: map-get($options, coordinate);
+    background-repeat: if(map-get($options, repeat), repeat- + map-get($options, repeat), no-repeat);
+  }
+  @if map-get($options, color) {
+    background-color: map-get($options, color);
+  }
+}
+@mixin ir($file) {
+  @include hide;
+  @include size(image-width($file) image-height($file));
+  background-image: image-url($file);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+@mixin cf {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}

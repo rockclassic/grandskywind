@@ -1,0 +1,105 @@
+.top-search {
+	select {
+		overflow:hidden;
+		margin:0;
+		padding:0;
+		width:100%;
+		height:0;
+		border-style: none;
+	}
+	.thank-select-box {
+	}
+
+	// select box title
+	.selectbox_title {
+		$bg-select-d-url:'common/bg_select_arrow_d.png';
+		$width:(image-width($bg-select-d-url)/2);
+		$height:(image-height($bg-select-d-url)/2);
+		padding:12px 10px 12px 10px;
+		width:100%;
+		color:map-get($font-style-color, 1);
+		font-size:map-get($font-style-size, 3);
+		font-weight:map-get($font-style-weight, Regular);
+		line-height:1em;
+		text-align:left;
+		vertical-align:middle;
+		box-sizing:border-box;
+		@include background((
+			file:$bg-select-d-url,
+			coordinate: 97% 50%
+		));
+		background-size:round($width);
+		border-bottom:1px solid map-get($line-color, 2);
+		border-left:1px solid map-get($line-color, 2);
+		cursor:pointer;
+		strong{
+			display:block;
+			overflow:hidden;
+			color:map-get($font-style-color, 1);
+			font-size:map-get($font-style-size, 3);
+			font-weight:map-get($font-style-weight, Regular);
+			line-height:1em;
+			word-break:break-all;
+		}
+		&_active {
+			$bg-select-u-url:'common/bg_select_arrow_u.png';
+			@include background((
+				file:$bg-select-u-url,
+				coordinate: 97% 50%
+			));
+		}
+	}
+}
+
+/* select box option */
+div.selectbox_option{
+	display: none;	
+	overflow:hidden;
+	position:relative;
+	width: 100%;
+	box-sizing:border-box;
+	z-index: 10;
+	.scroll {
+		overflow: hidden;
+	}
+	li{
+		list-style:none;
+		border-bottom:1px solid map-get($line-color, 2);
+		border-left:1px solid map-get($line-color, 2);
+		background-color:#fff;
+		// &:first-child {
+		// 	border-top:1px solid map-get($line-color, 2);
+		// }
+	}
+	a{
+		display:block;
+		overflow:hidden;
+		padding:12px 0 12px 10px;
+		color:map-get($font-style-color, 1);
+		font-size:map-get($font-style-size, 3);
+		font-weight:map-get($font-style-weight, Regular);
+		text-decoration:none;
+		word-break:break-all;
+		&.on,
+		&:hover{
+			background-color:#e9e9e9;
+		}
+	}
+}
+
+/* select box multiple */
+span.selectbox_multiple{
+	display:inline-block;
+	overflow:hidden;
+	ul {
+		li{
+			display:block;
+			overflow:hidden;
+			padding:12px 0 12px 10px;
+			color:map-get($font-style-color, 1);
+			font-size:map-get($font-style-size, 3);
+			font-weight:map-get($font-style-weight, Regular);
+			word-break:break-all;
+		}
+	}
+}

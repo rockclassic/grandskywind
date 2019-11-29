@@ -1,0 +1,10 @@
+.invest.list-content .h3_title h3 { display: block; overflow: hidden; padding-right: 25px; height: 25px; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.invest.view-content .aside { padding-bottom: 82px; }
+.invest .button-content { position: fixed; bottom: 0; left: 0; width: 100%; box-sizing: border-box; }
+
+.buying-content.step-01 .box { padding-bottom: 18px; padding-top: 18px; }
+.buying-content.step-02 dl dt { line-height: 33px; }
+.buying-content.step-03 .txt-box { margin-top: 8px; }
+.buying-content.step-03 .table-box table tbody td p { color: #4a4a4a; font-size: 18px; font-weight: 500; line-height: 30px; text-align: right; }
+.buying-content.step-03 .table-box table tbody td .error-box { text-align: left; }
+.buying-content.step-04 .complete-box { padding-top: 196px; padding-bottom: 50px; background-image: url('../images/invest/bg_complete.png?1447228319'); background-position: 50% 50px; background-repeat: no-repeat; background-size: 120px; }

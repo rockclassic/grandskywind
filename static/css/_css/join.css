@@ -1,0 +1,33 @@
+.buying-content.policy { padding-bottom: 20px; }
+.buying-content.policy .list-box { overflow: hidden; }
+.buying-content.policy .list-box ul li { position: relative; float: left; width: 100%; border-bottom: 1px solid #e9e9e9; }
+.buying-content.policy .list-box ul li.line-black { border-bottom: 1px solid #414141; }
+.buying-content.policy .list-box ul li p.check-box { display: block; padding-top: 15px; padding-bottom: 15px; color: #4a4a4a; font-size: 11px; font-weight: 400; line-height: 20px; text-decoration: none; }
+.buying-content.policy .list-box ul li p.check-box label { padding-left: 27px; background-position: 0 50%; }
+.buying-content.policy .list-box ul li .btn-arrow { display: block; position: absolute; top: 50%; left: 93%; background-image: url('/static/images/common/bg_select_arrow_r.png?1450681317'); background-position: 50% 50%; background-repeat: no-repeat; margin-top: -11px; padding: 5px; width: 7px; height: 12px; background-size: 7px; text-indent: -999em; }
+.buying-content.policy .pre-box { overflow: hidden; padding-top: 21px; font-size:12px; font-weight: 400; line-height: 18px; }
+.buying-content.policy .pre-box h3 { color: #4a4a4a; font-size: 12px; font-weight: 400; line-height: 18px; }
+.buying-content.policy .pre-box .section-box { padding-top: 18px; }
+.buying-content.policy .pre-box .section-box h2 { color: #4a4a4a; font-size: 12px; font-weight: 400; line-height: 18px; }
+.buying-content.policy .pre-box .section-box p { color: #4a4a4a; font-size: 12px; font-weight: 400; line-height: 18px; }
+
+.buying-content.step_01 .table-box table tbody td p.check-box { padding-top: 0; }
+.buying-content.step_01 .table-box table tbody td p.time-box { color: #888; font-size: 10px; font-weight: 400; line-height: 20px; }
+.buying-content.step_01 .table-box table tbody td p .btn-type { font-size: 14px; }
+.buying-content.step_01 .table-box table tbody td p .btn-color-05 { position: absolute; top: 0; right: 0; font-size: 12px; line-height: 15px; }
+.buying-content.step_01 .table-box table tbody td .error-box { text-align: left; }
+.buying-content.step_01 .help-box { display: inline-block; position: absolute; top: 0; right: 0; color: #888; font-size: 11px; font-weight: 400; line-height: 20px; }
+.buying-content.step_01 .tel-box { overflow: hidden; padding-top: 5px; }
+.buying-content.step_01 .tel-box li { float: left; width: 33%; }
+.buying-content.step_01 .tel-box li .radio-box { height: 30px; }
+.buying-content.step_01 .tel-box li .radio-box label { line-height: 30px; background-position: 0 50%; }
+.buying-content.step_02 .table-box table tbody td p.check-box { padding-top: 0; }
+.buying-content.step_02 .table-box table tbody td p.time-box { color: #888; font-size: 10px; font-weight: 400; line-height: 20px; }
+.buying-content.step_02 .table-box table tbody td p .mail-address { margin-right: 5px; }
+.buying-content.step_02 .table-box table tbody td p .btn-type { font-size: 14px; }
+.buying-content.step_02 .table-box table tbody td p .btn-color-05 { position: absolute; top: 0; right: 0; font-size: 12px; line-height: 15px; }
+.buying-content.step_02 .table-box table tbody td .error-box { text-align: left; }
+.buying-content.step_03 .txt-box { margin-bottom: 0; padding-top: 11px; }
+.buying-content.step_03 .table-box table tbody td .error-box { text-align: left; }
+.buying-content.step_04 .complete-box { padding-top: 180px; padding-bottom: 40px; background-image: url('/static/images/common/bg_logo_color.png?1450682170'); background-position: 50% 76px; background-repeat: no-repeat; background-size: 126px; border-bottom: 1px solid #e9e9e9; }
+.step-content ol li { float:left;width:20%; }

@@ -1,0 +1,15 @@
+@charset"utf-8";
+@import url(master.css);
+
+/* login */
+html,body {width:100%;height:auto;}
+#wrap{width:100%; min-width:1000px;}
+
+.login_box{width:390px; height:384px; margin:202px auto 20px; background:url(/common/master/image/bg_loginBx.gif) no-repeat 0 bottom #fff; text-align:center;}
+.login_box h1{width:100%; padding:41px 0 29px 0; background:url(/common/master/image/bg_loginBx_top.gif) no-repeat 0 top; text-align:center; font-size:26px; font-family:'Malgun Gothic','¸¼Àº °íµñ'; color:#000;}
+.login_box .input_area {width:308px; padding:40px 0; margin:0 auto 25px; border-bottom:1px solid #d9d9d9; border-top:1px dotted #cecece;}
+.login_box .input_area .inputType {width:286px; height:28px; padding:0 10px; margin-bottom:10px; border:1px solid #d9d9d9; color:#000; font-weight:bold;}
+.login_box .manager {font-size:12px; color:#666;}
+.login_box .manager span{color:#2062c4;}
+.login_box .btn_blue {width:308px; height:45px; border:1px solid #0b42bd; background:#0b42bd; border-radius:3px; text-align:center; color:#fff; font-size:14px; line-height:45px; cursor:pointer; font-family:"µ¸¿ò",Dotum,sans-serif; font-weight:bold;}
+.copyright {width:100%; text-align:center; font-size:11px; font-family:'Arial';}

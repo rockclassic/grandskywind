@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:'Noto Sans CJK KR';
+	src: url(../font/NSKR300.woff);
+	font-style:normal;font-weight: 300;
+}
+
+@font-face {
+	font-family:'Noto Sans CJK KR';
+	src: url(../font/NSKR500.woff);
+	font-style:normal;font-weight: 500;
+}
+
+@font-face {
+	font-family:'Noto Sans CJK KR';
+	src: url(../font/NSKR400.woff);
+	font-style:normal;font-weight: 400;
+}
+
+///
+///--------------------------------
+///웹폰트
+///--------------------------------
+///
+// @import url(../font/NotoSansCJKkr-Regular.woff);
+
+
+///
+///--------------------------------
+///공통 - 스타일 모듈 호출
+///--------------------------------
+///
+@import "common/normalize.css";
+@import "common/helpers.css";

@@ -1,0 +1,56 @@
+.find_password.layer-pop .btn-close { display: block; overflow: hidden; text-indent: -999em; line-height: 0; }
+
+.buying-content.info_search dl dt { width: 25%; }
+.buying-content.info_search dl dd { margin-left: 0; width: 75%; }
+.buying-content.info_search .total-box { padding: 27px 15px 25px 15px; border: 1px solid #69b7ef; }
+.buying-content.info_search .total-box dl dt { float: left; color: #888; font-size: 11px; font-weight: 400; line-height: 22px; }
+.buying-content.info_search .total-box dl dd { float: left; }
+.buying-content.info_search .total-box dl dd p { color: #3f91cb; font-size: 20px; font-weight: 400; line-height: 20px; }
+.buying-content.info_search .total-box dl dd p em { font-size: 16px; }
+.buying-content.info_search .table-box { padding-bottom: 20px; }
+.buying-content.info_search .table-box dl { margin-top: 10px; }
+.buying-content.info_search .table-box dl:first-child { margin-top: 0; }
+.buying-content.info_search .table-box table tbody tr.confirm th { padding-top: 3px; }
+.buying-content.info_search .table-box table tbody td p { padding-top: 5px; }
+.buying-content.info_search .table-box table tbody td p:first-child { padding-top: 0; }
+.buying-content.info_search .table-box table tbody td p .mail-address { margin-right: 5px; }
+.buying-content.info_search .exception-box { margin-top: 10px; }
+.buying-content.money_management .table-box dl dt { width: 32%; }
+.buying-content.money_management .table-box dl dd { margin-left: 0; width: 68%; }
+.buying-content.money_management .table-box table tbody td small { font-size: 10px; line-height: 14px; }
+.buying-content.money_management .button-content { padding-top: 10px; width: 100%; box-sizing: border-box; }
+.buying-content.money_management .button-content .btn-type { font-size: 12px; font-weight: 400; }
+.buying-content.cash_receipts { position: relative; }
+.buying-content.cash_receipts .help-box { display: inline-block; position: absolute; top: 0; right: 15px; color: #4a4a4a; font-size: 11px; font-weight: 400; line-height: 20px; text-decoration: none; }
+.buying-content.point_receipts { position: relative; }
+.buying-content.point_receipts .help-box { display: inline-block; position: absolute; top: 0; right: 15px; color: #4a4a4a; font-size: 11px; font-weight: 400; line-height: 20px; text-decoration: none; }
+.buying-content.withdraw h3.h3_tit { padding-top: 20px; }
+.buying-content.withdraw .table-box dl dt { width: 32%; }
+.buying-content.withdraw .table-box dl dd { margin-left: 0; width: 68%; }
+.buying-content.withdraw .table-box table tbody td small { font-size: 10px; line-height: 14px; }
+.buying-content.withdraw .box.button-content { padding-bottom: 35px; }
+.buying-content.withdraw .button-content { padding-top: 10px; width: 100%; box-sizing: border-box; }
+.buying-content.withdraw .button-content .btn-color-01 { font-size: 12px; font-weight: 400; }
+.buying-content.account h3.h3_tit { padding-top: 20px; }
+.buying-content.account .txt-box { margin-bottom: 0; padding-top: 11px; }
+.buying-content.account .table-box table tbody td small { font-size: 10px; line-height: 14px; }
+.buying-content.info_password { padding-bottom: 20px; }
+.buying-content.info_password h3.h3_tit { padding: 20px 0 11px 0; line-height: 16px; }
+.buying-content.info_password p.txt-box { margin-bottom: 7px; color: #888; font-size: 12px; font-weight: 400; line-height: 20px; }
+.buying-content.info_password p.input-box { margin-bottom: 12px; }
+.buying-content.info_password p.help-box a { color: #888; font-size: 11px; font-weight: 400; line-height: 16px; }
+.buying-content.point_charge { padding-bottom: 20px; }
+.buying-content.point_charge h3.h3_tit { padding: 20px 0 11px 0; line-height: 16px; }
+.buying-content.point_charge .table-box dl dt { width: 26%; }
+.buying-content.point_charge .table-box dl dd { margin-left: 0; width: 74%; }
+.buying-content.point_charge p.txt-box { margin-bottom: 7px; color: #888; font-size: 12px; font-weight: 400; line-height: 20px; }
+.buying-content.point_charge p.input-box { margin-bottom: 12px; }
+.buying-content.point_charge p.help-box a { color: #888; font-size: 11px; font-weight: 400; line-height: 16px; }
+
+.find_password.layer-pop { overflow: hidden; width: 270px; }
+.find_password.layer-pop .layer-content { padding-top: 10px; padding-bottom: 20px; }
+.find_password.layer-pop .layer-content p.txt-box { margin-bottom: 7px; color: #888; font-size: 12px; font-weight: 400; line-height: 20px; }
+.find_password.layer-pop .layer-content p.input-box { margin-bottom: 12px; }
+.find_password.layer-pop .layer-content p.help-box a { display: block; color: #888; font-size: 11px; font-weight: 400; line-height: 16px; text-align: center; }
+.find_password.layer-pop .layer-button-content { padding: 10px 20px 15px 20px; }
+.find_password.layer-pop .btn-close { position: absolute; top: 16px; right: 20px; width: 14px; height: 14px; background-image: url('/static/images/button/btn_close.png?1446170341'); background-position: 0 50%; background-repeat: no-repeat; background-size: 14px; }

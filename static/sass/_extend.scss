@@ -1,0 +1,138 @@
+
+// **********
+// * EXTEND *
+// **********
+
+%ir {
+	display:block;
+	overflow:hidden;
+	text-indent:-999em;
+	line-height:0;
+}
+
+%list-style-01 {
+	.item-visual {
+		overflow:hidden;
+		width:100%;
+		min-height:48%;
+		img {
+			display:block;
+			width:100%;
+			@include border-radius(5px 5px 0 0);
+		}
+	}
+	.item-info {
+		overflow:hidden;
+		padding:0 5%;
+		width:90%;
+		min-height:52%;
+		.h3_title {
+			position:relative;
+			height:39px;
+			border-bottom:1px solid map-get($line-color, 2);
+			h3 {
+				padding-top: 7px;
+				color:map-get($font-style-color, 1);
+				font-size:map-get($font-style-size, 4);
+				font-weight:map-get($font-style-weight, Medium);
+				line-height:25px;
+				text-align:left;
+			}
+			.btn-more {
+				$btn-more-url:'button/btn_more.png';
+				$width:(image-width($btn-more-url)/2);
+				$height:(image-height($btn-more-url)/2);
+				@extend %ir;
+				padding:4px;
+				width:round($width);
+				height:round($height);
+				@include absolute(top 10px right -4px);
+				@include background((
+					file:$btn-more-url,
+					coordinate: 50% 50%
+				));
+				background-size:round($width);
+			}
+			@each $v in $icon-rete {
+				.#{$v} {
+					$width:(image-width('icon/' + $v + '.png')/2);
+					$height:(image-height('icon/' + $v + '.png')/2);
+					@extend %ir;
+					@include absolute(top 7px right 0);
+					width:round($width);
+					height:round($height);
+					background:image-url('icon/' + $v + '.png') 50% 50% no-repeat;
+					background-size:round($width);
+				}
+			}
+		}
+		.info-view {
+			overflow:hidden;
+			dl {
+				float:left;
+				padding-right:4%;
+			 	width:50%;
+				border-bottom:1px solid map-get($line-color, 2);
+				box-sizing:border-box;
+				dt {
+					overflow:hidden;
+					padding-top:4px;
+					padding-bottom:5px;
+					color:map-get($font-style-color, 2);
+					font-size:map-get($font-style-size, 2);
+					font-weight:map-get($font-style-weight, DemiLight);
+					line-height:14px;
+				}
+				dd {
+					overflow:hidden;
+					p {
+						padding-bottom:3px;
+						color:map-get($font-style-color, 1);
+						font-size:map-get($font-style-size, 4);
+						font-weight:map-get($font-style-weight, Medium);
+						text-align:right;
+						&.point {
+							color:map-get($font-style-color, 4);
+						}
+					}
+					em {
+						font-size:map-get($font-style-size, 2);
+						font-style:normal;
+					}
+				}
+				&.even {
+					padding-right:0;
+					padding-left:4%;
+					border-left:1px solid map-get($line-color, 2);
+				}
+			}
+		}
+	}
+}
+
+%navi-style-01 {
+	span {
+		$bg-navi-url:'common/bg_navi_off.png';
+		$width:(image-width($bg-navi-url)/2);
+		$height:(image-height($bg-navi-url)/2);
+		@extend %ir;
+		display:inline-block;
+		margin-left:6px;
+		width:round($width);
+		height:round($height);
+		@include background((
+			file:$bg-navi-url,
+			coordinate: 50% 50%
+		));
+		background-size:round($width);
+		&:first-child {
+			margin-left:0;
+		}
+		&.on {
+			@include background((
+				file:'common/bg_navi_on.png',
+				coordinate: 50% 50%
+			));
+		}
+	}
+}

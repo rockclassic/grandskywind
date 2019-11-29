@@ -1,0 +1,7 @@
+.market.list-content .h3_title h3 { display: block; overflow: hidden; padding-right: 25px; height: 25px; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.market.view-content .aside { padding-bottom: 82px; }
+.market .button-content { position: fixed; bottom: 0; left: 0; width: 100%; box-sizing: border-box; }
+.market .button-content .field-middle { width: 83%; }
+
+.buying-content.step-01 .box { padding-bottom: 18px; padding-top: 18px; }
+.buying-content.step-02 dl dt { line-height: 33px; }

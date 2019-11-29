@@ -1,0 +1,15 @@
+@charset"utf-8";
+.layer_popup2 .box_gray {padding:10px; margin-bottom:30px; border:1px solid #ccc; background:#fafafa;}
+.layer_popup2{display:none;position:absolute;left:50%;z-index:10000;width:566px;margin-left:-283px;border:1px solid #2062c4;background:#fff;text-align:left}
+.layer_popup2 .layer_title{position:relative;height:43px;padding:0 14px;background:url(/common/master/image/bg_popup_title.gif) repeat-x 0 top; line-height:43px}
+.layer_popup2 .layer_title h4 {padding:0;border:0;font-size:14px;color:#fff;font-weight:bold;}
+.layer_popup2 .layer_title .close{position:absolute;top:12px;right:15px;width:16px;height:15px}
+.layer_popup2 .layer_title .close img{vertical-align:top}
+.layer_popup2 .layer_content {overflow:hidden;*position:relative;padding:20px 15px 30px}
+.layer_popup2 .layer_content .layer_title_sub {padding:0 0 15px 10px;background:url(/common/master/image/) no-repeat 0 4px;font-size:13px;color:#2062c4;}
+.layer_popup2 .list,.layer_popup .view,.layer_popup write{position:static}
+.layer_popup2 .layer_content .list {border-top:1px solid #ccc;}
+.layer_popup2 .layer_content .list thead th {text-align:center;}
+.layer_popup2 .layer_content .btn_blue a {color:#fff !important; text-decoration:none;}
+#srchMbLayer {width:720px;margin-left:-360px;}
+.layer_popup2 input[type=text] + .in_btn {margin-left:5px;}

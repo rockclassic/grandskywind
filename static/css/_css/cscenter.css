@@ -1,0 +1,42 @@
+.dealings.list-content .h3_title h3 { display: block; overflow: hidden; padding-right: 25px; height: 25px; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.dealings.view-content .aside { padding-bottom: 82px; }
+.dealings .button-content { position: fixed; bottom: 0; left: 0; width: 100%; box-sizing: border-box; }
+.dealings .button-content .field-middle { width: 83%; }
+
+.buying-content { padding-right: 0; padding-left: 0; }
+.buying-content.cs_list { padding: 0; background-color: #fff; }
+.buying-content.cs_list ul { padding-left: 15px; padding-right: 15px; box-sizing: border-box; padding-bottom: 65px; }
+.buying-content.cs_list ul li { margin-top: 0; width: 100%; }
+.buying-content.cs_list .item-box { display: block; overflow: hidden; padding-top: 18px; padding-bottom: 18px; }
+.buying-content.cs_list .item-box .info { float: left; width: 82%; }
+.buying-content.cs_list .item-box .info strong, .buying-content.cs_list .item-box .info span { display: block; }
+.buying-content.cs_list .item-box .info .h4_tit { overflow: hidden; margin-bottom: 3px; color: #4a4a4a; font-size: 12px; font-weight: 400; line-height: 18px; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.buying-content.cs_list .item-box .info .amount { color: #177ac0; font-size: 15px; font-weight: 400; line-height: 20px; }
+.buying-content.cs_list .item-box .info .amount em { font-size: 12px; }
+.buying-content.cs_list .item-box .info .date { color: #888; font-size: 11px; font-weight: 400; line-height: 16px; }
+.buying-content.cs_list .item-box .state { float: left; width: 18%; }
+.buying-content.cs_list .item-box .state span { display: block; padding-top: 6px; padding-bottom: 6px; font-size: 11px; font-weight: 400; text-align: center; line-height: 20px; }
+.buying-content.cs_list .item-box .state .identify { color: #4a4a4a; }
+.buying-content.cs_list .item-box .state .disable { color: #888; }
+.buying-content.cs_list .item-box .state .activate { color: #177ac0; }
+.buying-content.cs_list .button-content { position: fixed; bottom: 0; left: 0; padding: 10px; width: 100%; background-color: #e9e9e9; border-top: 1px solid #cdcdcd; box-sizing: border-box; }
+.buying-content.cs_view .h3_tit { padding: 20px 15px 11px 15px; border-bottom: 1px solid #414141; }
+.buying-content.cs_view .h3_tit h3 { margin-bottom: 5px; color: #4a4a4a; font-size: 14px; font-weight: 300; line-height: 20px; text-align: left; }
+.buying-content.cs_view .h3_tit p { overflow: hidden; }
+.buying-content.cs_view .h3_tit p .date { display: block; float: left; width: 50%; color: #888; font-size: 11px; font-weight: 400; line-height: 16px; }
+.buying-content.cs_view .h3_tit p .state { display: block; float: right; width: 50%; font-size: 11px; font-weight: 400; text-align: right; line-height: 16px; }
+.buying-content.cs_view .h3_tit p .state.identify { color: #4a4a4a; }
+.buying-content.cs_view .h3_tit p .state.disable { color: #888; }
+.buying-content.cs_view .h3_tit p .state.activate { color: #177ac0; }
+.buying-content.cs_view .content-box { padding: 15px; border-bottom: 1px solid #e9e9e9; }
+.buying-content.cs_view .content-box.disable { background-color: #f9f9f9; }
+.buying-content.cs_view .content-box p { color: #4a4a4a; font-size: 12px; font-weight: 400; line-height: 20px; }
+.buying-content.cs_view .reply-box { padding: 15px; border-bottom: 1px solid #e9e9e9; }
+.buying-content.cs_view .reply-box p { color: #4a4a4a; font-size: 12px; font-weight: 400; line-height: 20px; }
+.buying-content.cs_write h3.h3_tit { padding: 20px 0 11px 0; line-height: 16px; }
+.buying-content.cs_write .help-box { padding-top: 20px; }
+.buying-content.cs_write .help-box .txt-box { margin-bottom: 0; }
+.buying-content.cs_write .help-box .error-box { padding-top: 5px; padding-left: 6px; line-height: 15px; text-indent: -8px; }
+.buying-content.cs_write .tab-box { border-top: 1px solid #4a4a4a; }
+.buying-content.cs_write dl dt { line-height: 33px; }
+.buying-content.cs_write dl dd p { line-height: 33px; }

@@ -1,0 +1,106 @@
+// **********
+// * CONFIG *
+// **********
+$font: (
+  family: ('Noto Sans CJK KR', Dotum, Helvetica, AppleGothic, sans-serif),
+  size: 10px,
+  line-height: 1
+);
+
+$btn-color: (
+	1: #3f91cb,
+	2: #545454,
+	3: #c0c0c0,
+	4: #177ac0
+);
+
+$line-color: (
+	1: #69b7ef,
+	2: #cdcdcd,
+	3: #e9e9e9,
+	4: #306d98,
+	5: #414141,
+	6: #3f91cb
+);
+
+$font-style-weight: (
+	Thin: 100,
+	Light: 300,
+	DemiLight: 300,
+	Regular: 400,
+	Medium: 500,
+	Bold: 700,
+	Black: 900
+);
+
+$font-style-color: (
+	1: #4a4a4a,
+	2: #888,
+	3: #fff,
+	4: #3f91cb,
+	5: #177ac0,
+	6: #ff5252
+	
+);
+
+$font-style-size: (
+	1: 10px,
+	2: 11px,
+	3: 12px,
+	4: 14px,
+	5: 15px,
+	6: 16px,
+	7: 18px,
+	8: 20px
+);
+
+// **********
+// * SPRITE *
+// **********
+$sprite_path: 'sprite/';
+
+$icon-category-nav: (
+	'icon-cs',
+	'icon-deal',
+	'icon-gift',
+	'icon-glass',
+	'icon-service',
+	'icon-user',
+	'icon-basket',
+	'icon-star',
+	'icon-market'
+);
+
+$icon-info-nav: (
+	'icon-point',
+	'icon-won'
+);
+
+$icon-like: (
+	'icon-like-calculator',
+	'icon-like-calendar',
+	'icon-like-clock',
+	'icon-like-coin',
+	'icon-like-percent',
+	'icon-like-doc',
+	'icon-like-units'
+);
+$icon-menu: (
+	'icon-menu-investment',
+	'icon-menu-market',
+	'icon-menu-products',
+	'icon-menu-status'
+);
+$icon-rete: (
+	'icon-rete-d',
+	'icon-rete-p',
+	'icon-rete-g',
+	'icon-rete-s'
+);
+
+$rating-rete: (
+	'rating-rete-d',
+	'rating-rete-p',
+	'rating-rete-g',
+	'rating-rete-s'
+);

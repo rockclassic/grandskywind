@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+$nav-width: 220px;
+
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: $nav-width;
+	height: 100%;
+	min-height: 100%;
+	background-color: #fff;
+	visibility: hidden;
+}
+.iscroll {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+nav {
+	position: relative;
+	width:$nav-width;
+	.status {
+		$icon-nav-url: 'icon/icon_nav_open.jpg';
+		$width: (image-width($icon-nav-url)/2);
+		$height: (image-height($icon-nav-url)/2);
+		width:100%;
+		height:45px;
+		border-bottom:1px solid #306d98;
+		background-color: map-get($btn-color, 1);
+		.icon {
+			@extend %ir;
+			@include absolute(top 0 left 0);
+			width: round($width);
+			height: round($height);
+			
+		}
+		.login {
+			$icon-nav-url: 'icon/icon_nav_open.jpg';
+			background: image-url($icon-nav-url) 0 0 no-repeat;
+			background-size: round($width);
+		}
+		.logout {
+			$icon-nav-url: 'icon/icon_nav_close.jpg';
+			background: image-url($icon-nav-url) 0 0 no-repeat;
+			background-size: round($width);
+		}
+		&-msg {
+			color:map-get($font-style-color, 3);
+			font-size:map-get($font-style-size, 3);
+			font-weight:map-get($font-style-weight, Regular);
+			padding:16px 47px 16px 55px;
+			line-height:14px;
+		}
+		.icon-user-info {
+			@extend %ir;
+			$btn-menu-url:'icon/icon_user_info.jpg';
+			$width:(image-width($btn-menu-url)/2);
+			$height:(image-height($btn-menu-url)/2);
+			@include absolute(top 0 right 0);
+			padding:13px 15px;
+			width:round($width);
+			height:round($height);
+			@include background((
+				file:$btn-menu-url,
+				coordinate: 50% 50%,
+				color:map-get($btn-color, 1)
+			));
+			background-size:round($width);
+		}
+	}
+	.usr-info {
+		dl {
+			overflow:hidden;
+			padding:12px 14px;
+			width:192px;
+			height:40px;
+			background-color:#545454;
+			border-top:1px solid #777;
+			&:first-child {
+				border-top:0 none;
+			}
+			dt {
+				margin-bottom:8px;
+				padding-left:18px;
+				height:14px;
+				color:map-get($font-style-color, 3);
+				font-size:map-get($font-style-size, 2);
+				font-weight:map-get($font-style-weight, DemiLight);
+				text-align:left;
+				line-height:1.2em;
+				@each $v in $icon-info-nav {
+					&.#{$v} {
+						$width: (image-width('icon/' + $v + '.png')/2);
+						background: image-url('icon/' + $v + '.png') 0 0 no-repeat;
+						background-size: round($width);
+					}
+				}
+			}
+			dd {
+				color:map-get($font-style-color, 3);
+				font-size:map-get($font-style-size, 5);
+				font-weight:map-get($font-style-weight, Regular);
+				text-align:right;
+				line-height:18px;
+				em {
+					font-size:map-get($font-style-size, 3);
+					font-style:normal;
+				}
+			}
+		}
+	}
+	.category {
+		ul {
+			overflow:hidden;
+		}
+		li {
+			float:left;
+			width:100%;
+			border-bottom:1px solid #cdcdcd;
+			a {
+				display:block;
+				padding:17px 0 15px 45px;
+				width:80%;
+				color:map-get($font-style-color, 1);
+				font-size:map-get($font-style-size, 3);
+				font-weight:map-get($font-style-weight, Regular);
+				text-decoration:none;
+			}
+			@each $v in $icon-category-nav {
+				.#{$v} {
+					$width: (image-width('icon/' + $v + '.png')/2);
+					background: image-url('icon/' + $v + '.png') 14px 15px no-repeat;
+					background-size: round($width);
+				}
+			}
+		}
+	}
+}

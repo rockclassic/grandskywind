@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import 'compass';
+@import 'config';
+@import 'function';
+@import 'mixin';
+@import 'extend';
+
+.enroll {
+	h3 {
+		&.h3_tit {
+			padding-top:17px;
+			padding-bottom:8px;
+			line-height: 25px;
+		}
+	}
+	&.buying-content small{
+		padding-top:10px;
+	}
+	&.buying-content .table-box table tbody td p.check-box{
+		padding-top:7px;
+	}
+
+	.box.button-content {
+		padding-top:15px;
+	}
+	.button-content {
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+

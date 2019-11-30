@@ -12,7 +12,7 @@ class Home extends CI_Controller {
 // test
     } // }}}
 
-    // index
+    // index .....
     public function index() { // {{{
         redirect('/crm/', 'refresh');
     } // }}}
